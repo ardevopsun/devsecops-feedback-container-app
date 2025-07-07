@@ -7,7 +7,7 @@ function App() {
 
   const submitFeedback = async () => {
     try {
-      await axios.post('http://44.204.33.146:8080/feedback', { name, message });
+      await axios.post('/feedback', { name, message });
       alert('Feedback submitted!');
     } catch (err) {
       console.error('Error:', err);
@@ -40,3 +40,4 @@ function App() {
 }
 
 export default App;
+
